@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaintBall Gostwica</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/5e7b60bd46.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="navigation-grid container-1100 js-navigation">
+                <a href="#" class="logo">LOGO</a>
+    
+                <div class="btns-nav-container">
+                    <nav class="nav js-nav">
+                        <a href="#" class="nav-link">O nas</a>
+                        <a href="#" class="nav-link">Cennik</a>
+                        <a href="#" class="nav-link">Kontakt</a>
+                    </nav>
+        
+                    <div class="cta-wrappers js-nav-cta-wrapper">
+                        <a href="https://goo.gl/maps/zP5SqASPKD9HkjKCA" class="btn border-btn">Wyznacz Trasę</a>
+                        <a href="tel:+48535676486" class="btn white-btn">Zadzwoń Teraz</a>
+                    </div>
+                </div>
+    
+                <i class="hamburger-btn fa-solid fa-bars-staggered"></i>
+            </div>
+                <div class="mobile-nav-wrapper"></div>
+        </header>
+
+        <section class="section-home-hero">
+            <div class="paralax-bg hero-paralax"></div>
+            <div class="content-wrapper">
+                <h1>PaintBall <span>Gostwica</span></h1>
+            </div>
+        </section>
+
+        <section class="aboutUs">
+            <div class="padding-container-1100">
+                <div class="grid-layout">
+                    <div class="aboutUs-content section-content">
+                        <h2>O nas</h2>
+                        <p class="pharagraph">Serdecznie zapraszamy do zapisywania się do naszej drużyny! Dla graczy przeprowadzamy sparingi. Organizujemy m.in. wieczory kawalerskie, urodziny jak i wycieczki szkolne.
+                            Pole paintballowe to także świetne miejsce na imprezę urodzinową i integracyjną.
+                            Dysponujemy nowoczesnym, bezpiecznym sprzętem. Każda rozrywka odbywa się pod okiem naszych instruktorów.</p>
+                    </div>
+                    <div class="aboutUs-img img-container">
+                        <img src="img/dark-player.jpg" alt="PaintBall player">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="paralax-section">
+            <div class="paralax-bg second-paralax"></div>
+            <div class="top-down-shadow"></div>
+        </section>
+
+
+    </div>
+    <script>
+        window.addEventListener('scroll', () => {
+            let topValue = scrollY
+            const navBar = document.querySelector('header')
+            if(topValue >= 600){
+                navBar.style.opacity = 0;
+            }else{
+                navBar.style.opacity = 1;
+            }
+        })
+    </script>
+    <script src="js.js"></script>
+</body>
+</html>
